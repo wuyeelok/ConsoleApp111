@@ -1,9 +1,17 @@
 ﻿// The Length property provides the number of array elements.
-Console.WriteLine($"parameter count = {args.Length}");
+Console.WriteLine($"parameter count = {args.Length}!!");
 
-for (int i = 0; i < args.Length; i++)
+if (args.Length == 0)
 {
-    Console.WriteLine($"Arg[{i}] = [{args[i]}]");
+    Console.WriteLine($"No parameter!");
+}
+else
+{
+
+    for (int i = 0; i < args.Length; i++)
+    {
+        Console.WriteLine($"Arg[{i}] = [{args[i]}]");
+    }
 }
 
 /* Output (assumes 3 cmd line args):
